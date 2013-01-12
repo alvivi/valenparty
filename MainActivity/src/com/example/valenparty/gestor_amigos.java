@@ -6,6 +6,8 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.maps.GeoPoint;
 
 
 
@@ -14,6 +16,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
@@ -32,6 +35,7 @@ public class gestor_amigos extends SherlockActivity{
 
 	private final int PICK = 1;
 	private ListView mContactList;
+	private listaAmigos lista_amigos = new listaAmigos();
 	Myhelper BD;
 
 	/** Called when the activity is first created. */
@@ -60,7 +64,10 @@ public class gestor_amigos extends SherlockActivity{
     	while(c.moveToNext()){
     		String num = c.getString(1);
     		String nom = c.getString(2);
-    		lista.add(nom + " " + num); 
+    		lista.add(nom + " " + num);
+    		
+    		Amigo amigo = new Amigo(nom, num, new GeoPoint(0,0),null, null, null, null);
+    		lista_amigos.anyadir_Amigo(amigo);
     	}
     	db.close(); 
 
@@ -173,7 +180,10 @@ public class gestor_amigos extends SherlockActivity{
     	
     }
     private void llamadaTelefonica(int id){
-    	
+    	Amigo amigo = lista_amigos.leerAmigo(id);
+    	Intent myIntent = null;
+    	myIntent = new Intent(Intent.ACTION_CALL, Uri.parse(amigo.getTelefono()));
+		startActivity(myIntent);
     }
     private void borrarAmigo(int id){
     	
