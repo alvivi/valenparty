@@ -59,5 +59,6 @@
     <string name="diaglogo2">¿Quieres compartir en tú muro que te vas de fiesta?</string>
     <string name="dialogo3">SI</string>
     <string name="dialogo4">NO</string>
+    <string name="app_name">valenparty</string>
 
 </resources>
