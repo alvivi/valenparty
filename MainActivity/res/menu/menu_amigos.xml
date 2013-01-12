@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/anyadir_amigo"
+        android:title="@string/anyadir_amigo"
+        android:orderInCategory="100"
+        android:showAsAction="never" />  
+</menu>

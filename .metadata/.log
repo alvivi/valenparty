@@ -213,3 +213,6 @@ Caused by: java.lang.ClassNotFoundException: com.actionbarsherlock.R$bool
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
 	... 44 more
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-01-12 12:56:38.316
+!MESSAGE No projects found for [/Users/alvivi/Projects/valenparty/MainActivity/res/values/strings.xml]

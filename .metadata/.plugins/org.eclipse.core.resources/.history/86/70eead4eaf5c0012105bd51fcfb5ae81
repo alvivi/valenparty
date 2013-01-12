@@ -59,9 +59,5 @@
     <string name="diaglogo2">¿Quieres compartir en tú muro que te vas de fiesta?</string>
     <string name="dialogo3">SI</string>
     <string name="dialogo4">NO</string>
-    <string name="anyadir_amigo">Añadir amigo</string>
-    <string name="Contextual1">Localizar amigo</string>
-    <string name="Contextual2">Llamar amigo</string>
-    <string name="Contextual3">Borrar Amigo</string>
 
 </resources>
