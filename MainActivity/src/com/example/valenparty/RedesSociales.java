@@ -3,25 +3,26 @@ package com.example.valenparty;
 import java.util.Date;
 
 import oauth.signpost.OAuth;
-import com.actionbarsherlock.app.SherlockActivity;
-
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.actionbarsherlock.app.SherlockActivity;
 
 
 
-
-public class RedesSociales extends SherlockActivity {
+public class RedesSociales extends Activity {
 	
 	private SharedPreferences Myprefs;
 	private final Handler myTwitterHandler = new Handler();
@@ -52,11 +53,7 @@ public class RedesSociales extends SherlockActivity {
 		            
 		  });
         
-  
-      
-        
-        
-        
+
         
         //LIMPIAMOS CREDENCIALES
         final Button clearCredentials = (Button) findViewById(R.id.button1);
@@ -70,6 +67,30 @@ public class RedesSociales extends SherlockActivity {
     }
     
     
+    //CON ESTE CODIGO SE ACTIVA EL MENU
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_redes_sociales, menu);
+        return true;
+    }
+
+	@Override
+	//METODOS PARA PASAR A LA PANTALLA CREDITOS DESDE EL MENU
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// TODO Auto-generated method stub
+		switch (item.getItemId()){
+		case R.id.menu_settings:
+			clearCredentials();
+			break;
+		}
+		return true;
+	}
+	
+	
+
+//FIN DE CODIGO PARA PASAR A PANTALLA CREDITOS DESDE EL MENU
+	
+	
     private void clickFacebook(){
     	ImageButton face = (ImageButton) findViewById(R.id.imageButton2);
     	face.setOnClickListener(new View.OnClickListener() {
@@ -97,12 +118,7 @@ public class RedesSociales extends SherlockActivity {
     	}
     }
     	
-         //CLICK EN EL BOTON DE TWITTER DE LA INTERFAZ INICIAL
-    	private void click (){
-    	
-    	
-    	}
-    
+     
     	//MENSAJE PREDEFINIDO DEL TWEET
     	private String getTweetMsg() {
     		return getString(R.string.mensaje_twitter) + new Date();

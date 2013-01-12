@@ -65,7 +65,5 @@
     <string name="vistahibrida">Vista híbrida</string>
     <string name="vistarelieve">Vista de relieve</string>
     <string name="vistas_mapas">Vistas de mapa</string>
-    
-       <string name="borrar_tweet">Borrar credeciales</string>
 
 </resources>
