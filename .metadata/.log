@@ -216,3 +216,272 @@ Caused by: java.lang.ClassNotFoundException: com.actionbarsherlock.R$bool
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2013-01-12 12:56:38.316
 !MESSAGE No projects found for [/Users/alvivi/Projects/valenparty/MainActivity/res/values/strings.xml]
+!SESSION 2013-01-12 13:06:48.673 -----------------------------------------------
+eclipse.buildId=v21.0.0-519525
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -keyring /Users/alvivi/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.ide.eclipse.adt.package.product -keyring /Users/alvivi/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-01-12 13:06:51.475
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2013-01-12 13:07:04.233
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.core 4 0 2013-01-12 13:24:30.078
+!MESSAGE Invalid ZIP archive: /Users/alvivi/Projects/valenparty/facebook/bin/facebook.jar
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-01-12 13:24:44.152
+!MESSAGE maps_activity_v2.xml: Couldn't resolve resource @string/mostrara
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-01-12 13:36:25.353
+!MESSAGE Unable to execute dex: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+!STACK 0
+com.android.dx.util.DexException: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+	at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:580)
+	at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:538)
+	at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:519)
+	at com.android.dx.merge.DexMerger.mergeDexBuffers(DexMerger.java:168)
+	at com.android.dx.merge.DexMerger.merge(DexMerger.java:186)
+	at com.android.dx.command.dexer.Main.mergeLibraryDexBuffers(Main.java:300)
+	at com.android.dx.command.dexer.Main.run(Main.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.android.ide.eclipse.adt.internal.build.DexWrapper.run(DexWrapper.java:187)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.executeDx(BuildHelper.java:771)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:591)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1046)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:147)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-01-12 13:37:49.269
+!MESSAGE Unable to execute dex: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+!STACK 0
+com.android.dx.util.DexException: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+	at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:580)
+	at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:538)
+	at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:519)
+	at com.android.dx.merge.DexMerger.mergeDexBuffers(DexMerger.java:168)
+	at com.android.dx.merge.DexMerger.merge(DexMerger.java:186)
+	at com.android.dx.command.dexer.Main.mergeLibraryDexBuffers(Main.java:300)
+	at com.android.dx.command.dexer.Main.run(Main.java:232)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.android.ide.eclipse.adt.internal.build.DexWrapper.run(DexWrapper.java:187)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.executeDx(BuildHelper.java:771)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:591)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1046)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:147)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-01-12 13:39:50.857
+!MESSAGE Malformed manifest
+!STACK 0
+org.xml.sax.SAXParseException: Element type "uses-library" must be followed by either attribute specifications, ">" or "/>".
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.editors.manifest.ManifestInfo.sync(ManifestInfo.java:218)
+	at com.android.ide.eclipse.adt.internal.editors.manifest.ManifestInfo.getMinSdkVersion(ManifestInfo.java:404)
+	at com.android.ide.eclipse.adt.internal.editors.manifest.ManifestEditor.doSave(ManifestEditor.java:195)
+	at org.eclipse.ui.internal.SaveableHelper$2.run(SaveableHelper.java:151)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:277)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2649)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:285)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:264)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:156)
+	at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1399)
+	at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:3420)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3433)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1072)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4133)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1458)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1481)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1495)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Canvas.sendKeyEvent(Canvas.java:493)
+	at org.eclipse.swt.widgets.Control.doCommandBySelector(Control.java:1060)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5585)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSResponder.interpretKeyEvents(NSResponder.java:68)
+	at org.eclipse.swt.widgets.Composite.keyDown(Composite.java:587)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5495)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:221)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2102)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2284)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5557)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5002)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5151)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3616)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-01-12 13:39:50.982
+!MESSAGE Parser exception for /Users/alvivi/Projects/valenparty/MainActivity/AndroidManifest.xml: Element type "uses-library" must be followed by either attribute specifications, ">" or "/>".
+!STACK 0
+org.xml.sax.SAXParseException: Element type "uses-library" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1231)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:395)
+	at com.android.ide.common.xml.AndroidManifestParser.parse(AndroidManifestParser.java:608)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestHelper.parseUnchecked(AndroidManifestHelper.java:75)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestHelper.parse(AndroidManifestHelper.java:102)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerDeltaVisitor.visit(PreCompilerDeltaVisitor.java:222)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerBuilder.build(PreCompilerBuilder.java:318)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-01-12 13:40:49.842
+!MESSAGE Unable to execute dex: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+!STACK 0
+com.android.dx.util.DexException: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+	at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:580)
+	at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:538)
+	at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:519)
+	at com.android.dx.merge.DexMerger.mergeDexBuffers(DexMerger.java:168)
+	at com.android.dx.merge.DexMerger.merge(DexMerger.java:186)
+	at com.android.dx.command.dexer.Main.mergeLibraryDexBuffers(Main.java:300)
+	at com.android.dx.command.dexer.Main.run(Main.java:232)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.android.ide.eclipse.adt.internal.build.DexWrapper.run(DexWrapper.java:187)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.executeDx(BuildHelper.java:771)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:591)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1046)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:147)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-01-12 13:43:21.989
+!MESSAGE Unable to execute dex: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+!STACK 0
+com.android.dx.util.DexException: Multiple dex files define Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+	at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:580)
+	at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:538)
+	at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:519)
+	at com.android.dx.merge.DexMerger.mergeDexBuffers(DexMerger.java:168)
+	at com.android.dx.merge.DexMerger.merge(DexMerger.java:186)
+	at com.android.dx.command.dexer.Main.mergeLibraryDexBuffers(Main.java:300)
+	at com.android.dx.command.dexer.Main.run(Main.java:232)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.android.ide.eclipse.adt.internal.build.DexWrapper.run(DexWrapper.java:187)
+	at com.android.ide.eclipse.adt.internal.build.BuildHelper.executeDx(BuildHelper.java:771)
+	at com.android.ide.eclipse.adt.internal.build.builders.PostCompilerBuilder.build(PostCompilerBuilder.java:591)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:321)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:396)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:124)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.doFullIncrementalDebugBuild(ProjectHelper.java:1046)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:147)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+

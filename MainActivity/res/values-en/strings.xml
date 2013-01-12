@@ -60,5 +60,10 @@
     <string name="dialogo3">YES</string>
     <string name="dialogo4">NO</string>
     <string name="app_name">valenparty</string>
+    <string name="mostrara">Show</string>
+     <string name="vistanormal">Vista normal</string>
+    <string name="vistahibrida">Vista híbrida</string>
+    <string name="vistarelieve">Vista de relieve</string>
+    <string name="vistas_mapas">Vistas de mapa</string>
 
 </resources>

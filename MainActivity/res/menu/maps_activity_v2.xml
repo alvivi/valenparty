@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/menu_animacion2"
+        android:title="@string/vistas_mapas"
+        android:orderInCategory="100"
+        android:showAsAction="never" android:menuCategory="system">
+        <menu>
+            <group android:id="@+id/group1" android:menuCategory="alternative" android:checkableBehavior="single"><item android:id="@+id/vista_satelite2" android:menuCategory="alternative" android:title="@string/menu_vista_satelite" android:checkable="true" android:checked="false" android:enabled="true"/>
+            <item android:id="@+id/vistanormal" android:menuCategory="alternative" android:title="@string/vistanormal" android:checkable="true"/>
+            <item android:id="@+id/vistahibrida" android:menuCategory="alternative" android:title="@string/vistahibrida" android:checkable="true"/>
+            <item android:id="@+id/vistarelieve" android:menuCategory="alternative" android:checkable="true" android:title="@string/vistarelieve"/>
+</group>
+            
+        </menu>
+    </item><group android:id="@+id/group2" android:menuCategory="container">
+        <item android:id="@+id/item2"></item>
+    </group>
+
+</menu>

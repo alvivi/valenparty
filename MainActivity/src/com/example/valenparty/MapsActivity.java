@@ -103,9 +103,9 @@ public class MapsActivity extends MapActivity{
 	                GeoPoint caGus = new GeoPoint (39119540,-452542);
 	                GeoPoint caPau = new GeoPoint (39510444,-318405);
 	                
-	                Amigo yo = new Amigo("YO", "mipegir",mipunto,null,null,"muy Hombre" );
-	                Amigo Gustavo = new Amigo("Gustavo", "guslandu",caGus,null,null,"un poco nenaza" );
-	                Amigo Pau = new Amigo("Pau", "pamullo",caPau,null,null,"muy nenaza" );
+	                Amigo yo = new Amigo("YO", "600506070", mipunto, null, "", "mujer", null);
+	                Amigo Gustavo = new Amigo("Gustavo", "guslandu",caGus, null, "", "hombre", null);
+	                Amigo Pau = new Amigo("Pau", "pamullo",caPau, null, "", "hombre", null);
 	                
 	                listaAmigos.add(yo);
 	                listaAmigos.add(Gustavo);

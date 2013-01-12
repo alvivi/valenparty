@@ -63,5 +63,10 @@
     <string name="Contextual1">Localizar amigo</string>
     <string name="Contextual2">Llamar amigo</string>
     <string name="Contextual3">Borrar Amigo</string>
+    <string name="mostrara">Mostrar a</string>
+    <string name="vistanormal">Vista normal</string>
+    <string name="vistahibrida">Vista híbrida</string>
+    <string name="vistarelieve">Vista de relieve</string>
+    <string name="vistas_mapas">Vistas de mapa</string>
 
 </resources>

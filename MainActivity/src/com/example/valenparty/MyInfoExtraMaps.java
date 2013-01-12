@@ -94,7 +94,7 @@ public class MyInfoExtraMaps extends Overlay  {
 			if (point.hashCode() == MapsActivity.listaAmigos.get(i).getLocAmigo().hashCode()){
 				
 				Log.d("DEBUGGER","PASAMOS DENTRO");
-				Toast toast = Toast.makeText(contexto, MapsActivity.listaAmigos.get(i).getNick().toUpperCase() 
+				Toast toast = Toast.makeText(contexto, MapsActivity.listaAmigos.get(i).getNombrePublico().toUpperCase() 
 						+ "\n" + "Nmbre: " + MapsActivity.listaAmigos.get(i).getNombrePublico() 
 						+ "\n" + "IP: " + MapsActivity.listaAmigos.get(i).getIp() 
 						+ "\n" + "Extra: " + MapsActivity.listaAmigos.get(i).getSexo()

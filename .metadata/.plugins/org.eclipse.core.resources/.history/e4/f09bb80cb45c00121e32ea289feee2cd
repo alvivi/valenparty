@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Valenparty</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_principal">ValenParty</string>
+
+    <!-- GPS -->
+    <string name="showcoordbutton">Show coordinates</string>
+    <string name="showmaps">See Map</string>
+    <string name="launchMostrarMapas">launchSeeMaps</string>
+    <string name="boton_buscame">Look at me</string>
+    <string name="testmapas_m">Test Maps</string>
+    <string name="maps_menu_animacion">Animations</string>
+    <string name="submen_maps_activado_anim">Animations activated</string>
+    <string name="menu_map_options">Maps Options</string>
+    <string name="menu_vista_satelite">Satellite</string>
+
+    <!-- MAIN -->
+    <string name="Red_Social">Share Social Networks</string>
+    <string name="Activity">Waiting</string>
+    <string name="Mamigos">Found Friends</string>
+    <string name="Gamigos">Managing Friends</string>
+
+    <!-- VENTANA LUGARES -->
+    <string name="title_activity_lista_lugares">Lista_lugares</string>
+    <string name="sitios">Lista de discotecas</string>
+    <string name="namesitio">Nombre</string>
+    <string name="direccionsitio">Direccion</string>
+    <string name="localidadsitio">Localidad</string>
+    <string name="sitio1nombre">Superclub</string>
+    <string name="sitio1direccion">C/San Vicente, 95</string>
+    <string name="sitio1localidad">Valencia</string>
+
+    <!-- MENUS -->
+    <string name="menu_creditos">Credits</string>
+
+    <!-- MENSAJE TWITTER -->
+    <string name="mensaje_twitter">Tweet sent from the app @ valenparty. I am going on party nen!   </string>
+    <string name="mensaje_twitter_notify">Tweet posted to your account</string>
+    <string name="title_activity_redes_sociales">Social Networks</string>
+
+    <!-- REDES SOCIALES -->
+    <string name="Redes">Share on Social Networks</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Twitter">  Twitter</string>
+    <string name="title_activity_facebook">Facebook</string>
+    <string name="app_id">551198758241090</string>
+    <string name="share">Share on Facebook</string>
+    <string name="Face">Facebook</string>
+    <string name="logueado_face">Hi, You are logged in as  </string>
+    <string name="no_logueado_face">Hello, you are not logged in yet!</string>
+    <string name="nameappface">Valenparty</string>
+    <string name="captionappface">The best social app Valencia</string>
+    <string name="descriptionappface">Hello Friends. I am going on party right now ..</string>
+    <string name="comentariofacebook">¡Added comment on Facebook wall!</string>
+    <string name="dialogo1">Add Comment on Facebook</string>
+    <string name="diaglogo2">Want to share on your wall that you go on party?</string>
+    <string name="dialogo3">YES</string>
+    <string name="dialogo4">NO</string>
+    <string name="app_name">valenparty</string>
+    <string name="mostrara">Show</string>
+
+</resources>

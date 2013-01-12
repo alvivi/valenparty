@@ -59,10 +59,10 @@ public class GPSTracker extends Service implements LocationListener {
     double longitude; // longitude
  
     // The minimum distance to change Updates in meters
-    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // 10 meters
+    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // 10 metros
  
     // The minimum time between updates in milliseconds
-    private static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1; // 1 minute
+    private static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1; // 1 minuto
  
     // Declaring a Location Manager
     protected LocationManager locationManager;
@@ -88,7 +88,7 @@ public class GPSTracker extends Service implements LocationListener {
             } else {
                 this.canGetLocation = true;
                 
-                // PRIMERO: if GPS Enabled get lat/long using GPS Services
+                // PRIMERO: Si el GPS esta activado nos localiza a traves de este
                 if (isGPSEnabled) {
                     if (location == null) {
                         locationManager.requestLocationUpdates(
@@ -106,7 +106,7 @@ public class GPSTracker extends Service implements LocationListener {
                         }
                     }
                 }
-                // EN CASO CONTRARIO: get location from Network Provider
+                // EN CASO CONTRARIO: Nos localiza a traves del proveedor de red
                 else if (isNetworkEnabled) {
                     locationManager.requestLocationUpdates(
                             LocationManager.NETWORK_PROVIDER,
@@ -208,6 +208,13 @@ public class GPSTracker extends Service implements LocationListener {
  
 
     public void onLocationChanged(Location location) {
+//        Toast.makeText(
+//                MapsActivityV2.this,
+//                "Hay cambios:\n" +
+//                location.getTitle(),
+//                Toast.LENGTH_SHORT).show();
+    	
+    	
     }
  
  
