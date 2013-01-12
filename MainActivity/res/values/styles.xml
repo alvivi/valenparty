@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    
+    
+     <style name = "PruebaMain">
+        <item name = "android:textColor">@color/Blanco</item>
+        <item name = "android:textSize">16dip</item>
+                
+    </style>
+    <color name="Blanco">#FFFFFF</color>
+    </resources>

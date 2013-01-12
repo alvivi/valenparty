@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/menu_animacion"
+        android:title="@string/menu_map_options"
+        android:orderInCategory="100"
+        android:showAsAction="never" android:menuCategory="system">
+        <menu>
+            <item android:id="@+id/vista_satelite" android:menuCategory="secondary" android:title="@string/menu_vista_satelite" android:checkable="true" android:checked="false" android:enabled="true"/><item android:id="@+id/anim_activ" android:menuCategory="secondary" android:checkable="true" android:checked="false" android:title="@string/submen_maps_activado_anim" android:enabled="true"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Valenparty</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_principal">ValenParty</string>
+
+    <!-- GPS -->
+    <string name="showcoordbutton">Muestra coordenadas</string>
+    <string name="showmaps">Ver Mapa</string>
+    <string name="launchMostrarMapas">launchMostrarMapas</string>
+    <string name="boton_buscame">Búscame</string>
+    <string name="testmapas_m">Test Mapas</string>
+    <string name="maps_menu_animacion">Animaciones</string>
+    <string name="submen_maps_activado_anim">Animaciones activadas</string>
+    <string name="menu_map_options">Opciones de mapas</string>
+    <string name="menu_vista_satelite">Vista satélite</string>
+
+    <!-- MAIN -->
+    <string name="Red_Social">Compartir en Redes Sociales</string>
+    <string name="Activity">En espera</string>
+    <string name="Mamigos">Buscar amigos</string>
+    <string name="Gamigos">Gestión amigos</string>
+
+    <!-- VENTANA LUGARES -->
+    <string name="title_activity_lista_lugares">Lista_lugares</string>
+    <string name="sitios">Lista de discotecas</string>
+    <string name="namesitio">Nombre</string>
+    <string name="direccionsitio">Direccion</string>
+    <string name="localidadsitio">Localidad</string>
+    <string name="sitio1nombre">Superclub</string>
+    <string name="sitio1direccion">C/San Vicente, 95</string>
+    <string name="sitio1localidad">Valencia</string>
+
+    <!-- MENUS -->
+    <string name="menu_creditos">Créditos</string>
+
+    <!-- MENSAJE TWITTER -->
+    <string name="mensaje_twitter">Tweet enviado desde la app @valenparty. Me voy de fiesta, nen!!   </string>
+    <string name="mensaje_twitter_notify">Tweet publicado en tu cuenta</string>
+    <string name="title_activity_redes_sociales">Redes_sociales</string>
+
+    <!-- REDES SOCIALES -->
+    <string name="Redes">Compartir en Redes Sociales</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Twitter">  Twitter</string>
+    <string name="title_activity_facebook">Facebook</string>
+    <string name="app_id">551198758241090</string>
+    <string name="share">Comparte en Facebook</string>
+    <string name="Face">Facebook</string>
+    <string name="logueado_face">Hola, estás logueado como  </string>
+    <string name="no_logueado_face">Hola no estás logueado aún!</string>
+    <string name="nameappface">Valenparty</string>
+    <string name="captionappface">La mejor aplicación social de Valencia</string>
+    <string name="descriptionappface">Hola amig@s. Me voy de fiesta ahora mismo..</string>
+    <string name="comentariofacebook">¡¡Añadido comentario en muro de Facebook!!</string>
+    <string name="dialogo1">Añadir comentario en Facebook</string>
+    <string name="diaglogo2">¿Quieres compartir en tú muro que te vas de fiesta?</string>
+    <string name="dialogo3">SI</string>
+    <string name="dialogo4">NO</string>
+    <string name="app_name">valenparty</string>
+
+</resources>
