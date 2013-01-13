@@ -3,7 +3,7 @@
 
     <string name="app_name">Valenparty</string>
     <string name="menu_settings">Configuración</string>
-    <string name="title_activity_main">Valenparty</string>
+    <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_principal">ValenParty</string>
 
     <!-- GPS -->
@@ -39,11 +39,7 @@
     <!-- MENSAJE TWITTER -->
     <string name="mensaje_twitter">Tweet enviado desde la app @valenparty. Me voy de fiesta, nen!!   </string>
     <string name="mensaje_twitter_notify">Tweet publicado en tu cuenta</string>
-    <string name="title_activity_redes_sociales">Redes Sociales</string>
-	<string name="title_activity_creditos">Creditos</string>
-
-	<string name="integrantes">App realizada por: </string>
-	
+    <string name="title_activity_redes_sociales">Redes_sociales</string>
 
     <!-- REDES SOCIALES -->
     <string name="Redes">Compartir en Redes Sociales</string>

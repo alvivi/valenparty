@@ -26,7 +26,7 @@
     <application
         android:allowBackup="true"
         android:allowClearUserData="false"
-        android:icon="@drawable/partyicont"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:persistent="false"
         android:theme="@style/Theme.Sherlock" >
@@ -72,7 +72,11 @@
         <activity
             android:name="com.example.valenparty.PrepareRequestTokenActivity"
             android:launchMode="singleTask" >
-            
+            
+		<activity
+            android:name="com.example.valenparty.CreditosActivity"
+            android:label="@string/title_activity_creditos" >
+        </activity>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

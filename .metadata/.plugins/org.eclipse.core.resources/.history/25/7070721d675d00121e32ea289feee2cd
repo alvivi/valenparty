@@ -53,6 +53,17 @@ public class RedesSociales extends Activity {
 		            
 		  });
         
+
+        
+        //LIMPIAMOS CREDENCIALES
+        final Button clearCredentials = (Button) findViewById(R.id.button1);
+        clearCredentials.setOnClickListener(new View.OnClickListener() {
+		       public void onClick(View v) {
+		    	   clearCredentials() ;
+		        }
+       
+        });
+        
     }
     
     
