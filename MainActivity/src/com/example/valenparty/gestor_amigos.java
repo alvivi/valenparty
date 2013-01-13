@@ -15,12 +15,14 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Data;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.View;
@@ -35,7 +37,7 @@ public class gestor_amigos extends SherlockActivity{
 
 	private final int PICK = 1;
 	private ListView mContactList;
-	private listaAmigos lista_amigos = new listaAmigos();
+	private listaAmigos lista_amigos = null;
 	Myhelper BD;
 
 	/** Called when the activity is first created. */
@@ -52,7 +54,8 @@ public class gestor_amigos extends SherlockActivity{
 
 	private void generarListaContactos() {
       
-    	BD = new Myhelper(this, "DBUsuarios");
+		lista_amigos = new listaAmigos();
+		BD = new Myhelper(this, "DBUsuarios");
     	SQLiteDatabase db = BD.getWritableDatabase();
  
     	// Hacemos la consulta para recuperar nuestros datos
@@ -111,15 +114,17 @@ public class gestor_amigos extends SherlockActivity{
 		 
 		 colIdx = cursor.getColumnIndex(Phone.NUMBER);
 		 String numero = cursor.getString(colIdx);
-		 
+		 cursor.close();
 		 //abrimos la base de datos
 		 BD = new Myhelper(this, "DBUsuarios");
 		 SQLiteDatabase db = BD.getWritableDatabase();
-//		 db.execSQL("DROP TABLE IF EXISTS mytable");
-//		 db.execSQL("CREATE TABLE mytable (numero TEXT PRIMARY KEY, nombre TEXT)");
 		 
 		 String insert = "INSERT INTO mytable (numero, nombre, latitud, longitud, estado) " + "VALUES ('" + numero +"', '" + nombre +"', '0', '0', 'POR_CONFIRMAR')";
-		 db.execSQL(insert);
+		 try {
+			db.execSQL(insert);
+		} catch (SQLException e) {
+			Log.d("Gestor","Intentamos añadir un duplicado");
+		}
 		 //Cerramos la base de datos
 		 db.close();
 		 generarListaContactos();
@@ -157,8 +162,7 @@ public class gestor_amigos extends SherlockActivity{
 
         inflater.inflate(R.menu.menu_contextual_amigos, menu);
     }
-    public boolean onContextItemSelected(MenuItem item) {
-
+    public boolean onContextItemSelected(android.view.MenuItem item) {
 
         AdapterContextMenuInfo info =
             (AdapterContextMenuInfo) item.getMenuInfo();
@@ -182,10 +186,20 @@ public class gestor_amigos extends SherlockActivity{
     private void llamadaTelefonica(int id){
     	Amigo amigo = lista_amigos.leerAmigo(id);
     	Intent myIntent = null;
-    	myIntent = new Intent(Intent.ACTION_CALL, Uri.parse(amigo.getTelefono()));
+    	myIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + amigo.getTelefono()));
 		startActivity(myIntent);
     }
     private void borrarAmigo(int id){
+    	Log.d("Gestor","Borrando Amigo numero " + id);
+    	Amigo aux = lista_amigos.leerAmigo(id);
+    	String numero = aux.getTelefono();
+    	lista_amigos.borrar_Amigo(aux);
+    	BD = new Myhelper(this, "DBUsuarios");
+    	SQLiteDatabase db = BD.getWritableDatabase();
+
+    	db.delete("mytable", "numero = ?", new String[] { numero });
+    	db.close();
     	
+    	generarListaContactos();
     }
 }

@@ -13,7 +13,7 @@ public class Myhelper extends SQLiteOpenHelper {
 	}
 
 	public void onCreate(SQLiteDatabase arg0) {
-		arg0.execSQL("CREATE TABLE IF NOT EXISTS mytable (id INTEGER PRIMARY KEY AUTOINCREMENT, numero TEXT, nombre TEXT, latitud TEXT, longitud TEXT, estado TEXT)");
+		arg0.execSQL("CREATE TABLE IF NOT EXISTS mytable (id INTEGER PRIMARY KEY AUTOINCREMENT, numero TEXT UNIQUE, nombre TEXT, latitud TEXT, longitud TEXT, estado TEXT)");
 	}
 
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

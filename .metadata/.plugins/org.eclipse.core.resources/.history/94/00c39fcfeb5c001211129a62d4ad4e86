@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.valenparty"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <permission
+      android:name="com.example.valenparty.permission.MAPS_RECEIVE"
+      android:protectionLevel="signature"/>
+ 
+    <uses-permission android:name="com.example.valenparty.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+ 
+    	<!-- Porque se requiere OpenGL 2.0 para dibujar los mapas-->
+	<uses-feature android:glEsVersion="0x00020000" 
+              android:required="true"/>
+	
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="false"
+        android:theme="@style/Theme.Sherlock" >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+        <!-- Clave para tener acceso a MAPS v2 -->
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+               android:value="AIzaSyBFP7a_uaCD90LXaIis5f7L5lEDOLfG2DE"/>
+        
+
+        <activity
+            android:name="com.example.valenparty.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.valenparty.MapsActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.example.valenparty.CreditosActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.example.valenparty.Lista_lugares"
+            android:label="@string/title_activity_lista_lugares" >
+        </activity>
+        <activity
+            android:name="com.example.valenparty.RedesSociales"
+            android:label="@string/title_activity_redes_sociales" >
+        </activity>
+        
+        <activity
+            android:name="com.example.valenparty.Facebook"
+            android:label="@string/title_activity_facebook" >
+        </activity>
+        
+        <activity
+            android:name="com.example.valenparty.PrepareRequestTokenActivity"
+            android:launchMode="singleTask" >
+>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="x-oauthflow-twitter" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.valenparty.FacebookActivity"
+            android:label="@string/title_activity_facebook" >
+        </activity>
+        
+        <meta-data 
+            android:name="com.facebook.sdk.ApplicationId" 
+            android:value="@string/app_id"/>
+        
+        <activity 
+            android:name="com.facebook.LoginActivity" 
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="com.example.valenparty.gestor_amigos" 
+            android:label="@string/app_name">
+            
+        </activity>
+    </application>
+
+    <!-- LOS COMENTARIOS SE HACEN ASI -->
+
+</manifest>
